@@ -1,10 +1,10 @@
 # Tugas Kelompok Praktikum SKJ
 
-  -------------------------------- --------------------
-  Ronggo Tsani Musyafa             21/473988/PA/20449
-  Rhazes Wahyu Ramadhan Setiawan   21/479159/PA/20783
-  Faiz Unisa Jazadi                21/475298/PA/20563
-  -------------------------------- --------------------
+|||
+|--------------------------------|------------------|
+|Ronggo Tsani Musyafa            |21/473988/PA/20449|
+|Rhazes Wahyu Ramadhan Setiawan  |21/479159/PA/20783|
+|Faiz Unisa Jazadi               |21/475298/PA/20563|
 
 ## Rencana
 
@@ -35,11 +35,12 @@ Gambaran sederhana sebagai berikut.
 
 ### Protokol
 
-  Description        Client request                        Server response
-  ------------------ ------------------------------------- -----------------
-  Tambah agenda      `add <data:iso-8601> <event name>`    `OK` or `ERROR`
-  Hapus agenda       `del <date> [<event name keyword>]`   `OK` or `ERROR`
-  Tampilkan agenda   `list`                                Serialized data
+|Description|Client request|Server response|
+|---|---|---|
+|Tambah agenda|`add <data:iso-8601> <event name>`|`OK` or `ERROR`|
+|Hapus agenda|`del <date> [<event name keyword>]`|`OK` or `ERROR`|
+|Tampilkan agenda|`list`|``
+
 
 ### Model Koneksi
 
