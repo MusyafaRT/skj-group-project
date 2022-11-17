@@ -1,4 +1,3 @@
-import json
 import socketserver
 import sys
 import threading

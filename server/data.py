@@ -25,7 +25,7 @@ class CplanDataSession:
     def remove(self, search_date, keyword):
         """Remove an entry to data"""
         for i, (date, desc) in enumerate(self._data):
-            if date == search_date and keyword in desc.lower():
+            if date == search_date and keyword.lower() in desc.lower():
                 del self._data[i]
 
     def commit(self):
