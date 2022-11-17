@@ -1,12 +1,14 @@
-# Tugas Kelompok Praktikum SKJ
+---
+author:
+- 'Ronggo Tsani Musyafa -- `21/473988/PA/20449`'
+- 'Rhazes Wahyu Ramadhan Setiawan -- `21/479159/PA/20783`'
+- 'Faiz Unisa Jazadi -- `21/475298/PA/20563`'
+fontfamily: cmbright
+subtitle: Praktikum Sistem Komputer dan Jaringan
+title: 'Tugas Kelompok: Konsep Program Socket Programming'
+---
 
-|||
-|--------------------------------|------------------|
-|Ronggo Tsani Musyafa            |21/473988/PA/20449|
-|Rhazes Wahyu Ramadhan Setiawan  |21/479159/PA/20783|
-|Faiz Unisa Jazadi               |21/475298/PA/20563|
-
-## Rencana
+# Rencana
 
 Kita ingin membuat aplikasi socket server (dan client) kalender sederhana.
 Gambaran sederhana sebagai berikut.
@@ -33,40 +35,38 @@ Gambaran sederhana sebagai berikut.
     <sleep 1s>
     <clear screen, then start over>
 
-### Protokol
+```{=tex}
+\pagebreak
+```
 
-|Description|Client request|Server response|
-|---|---|---|
-|Tambah agenda|`add <data:iso-8601> <event name>`|`OK` or `ERROR`|
-|Hapus agenda|`del <date> [<event name keyword>]`|`OK` or `ERROR`|
-|Tampilkan agenda|`list`|``
+## Protokol
 
+  Description        Client request                        Server response
+  ------------------ ------------------------------------- -----------------
+  Tambah agenda      `add <data:iso-8601> <event name>`    `OK` or `ERROR`
+  Hapus agenda       `del <date> [<event name keyword>]`   `OK` or `ERROR`
+  Tampilkan agenda   `list`                                Serialized data
 
-### Model Koneksi
+## Model Koneksi
 
-Pilihan:
+Model koneksi yang dipilih adalah satu koneksi digunakan untuk mengirim 1
+perintah dan menerima 1 respon.
 
-1.  Satu koneksi untuk satu command (koneksi ditutup tiap command)
-    -   Kelebihan: tidak harus repot maintain koneksi supaya terus terbuka
-    -   Kekurangan: mungkin kesannya lebih boros (tapi sebenarnya tidak juga
-        karena diasumsikan aplikasi tidak di-refresh 5 juta kali tiap detik)
-2.  Satu koneksi bisa menjalankan banyak command (satu sesi tidak langsung
-    ditutup setelah satu command)
-    -   Kelebihan: lebih cepat secara performa (walaupun mungkin tidak terasa
-        signifikan bedanya)
-    -   Kekurangan: sulit memastikan status koneksi agar selalu established
+    <initiate connection>
+    -> add 2022-11-11 Briefing Pengumuman Makomji 2022
+    <- OK
+    <connection closed>
 
-### Database (Server)
+Model koneksi ini dipilih untuk alasan simplisitas -- tidak perlu memastikan
+status koneksi di sisi client. Model koneksi ini juga lebih menghemat resource
+pada server (client hanya membuka koneksi jika diperlukan).
 
-Pilihan:
+## Database (Server)
 
-1.  MySQL
-    -   Kelebihan: cool aja
-    -   Kekurangan: capek, ribet, kesannya mempersulit
-2.  Text file: simple dan murah
-    -   Kelebihan: file tersimpan, sederhana karena data juga sederhana
-    -   Kekurangan: sulit di-manage (tapi untuk apa di-manage? :D)
-3.  Memory
-    -   Kelebihan: jauh lebih simple daripada file karena data hanya disimpan di
-        memory
-    -   Kekurangan: kalau server ditutup, data hilang
+Data agenda disimpan di file teks biasa dengan format tertentu.
+
+    2022-11-10 Agenda 1
+    2022-11-09 Agenda 2
+
+Data disimpan dalam bentuk ini karena lebih sederhana dan mudah
+diimplementasikan.
