@@ -78,7 +78,7 @@ Menggunakan Python dengan library `socket`.
 
 ![](img/server-dia.svg)
 
-# Implementasi Server
+# Implementasi Client
 
 ![](img/client-dia.svg)
 
