@@ -8,7 +8,11 @@ subtitle: Praktikum Sistem Komputer dan Jaringan
 title: 'Tugas Kelompok: Konsep Program Socket Programming'
 ---
 
-# Rencana
+# Link GitHub
+
+<https://github.com/MusyafaRT/skj-group-project>
+
+# Konsep
 
 Kita ingin membuat aplikasi socket server (dan client) kalender sederhana.
 Gambaran sederhana sebagai berikut.
@@ -34,10 +38,6 @@ Gambaran sederhana sebagai berikut.
 
     <sleep 1s>
     <clear screen, then start over>
-
-```{=tex}
-\pagebreak
-```
 
 ## Protokol
 
