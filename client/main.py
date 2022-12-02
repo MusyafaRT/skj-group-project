@@ -24,7 +24,7 @@ def main(host, port):
         print(current_list)
         print("[1] Tambah Agenda  [2] Hapus Agenda  [3] Refresh  [4] Keluar")
         print("-------------------------------------------------------------")
-        choice = input("Pilih [1-3]: ")
+        choice = input("Pilih [1-4]: ")
         if not choice.isdigit():
             continue
         choice = int(choice)
