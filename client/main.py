@@ -43,7 +43,7 @@ def main(host, port):
 
 def menu_tambah(host, port):
     date = input('Tanggal [YYYY-MM-DD]: ')
-    desc = input('Deskripsi agenda:   : ')
+    desc = input('Deskripsi agenda    : ')
     res = send_command(host, port, f'add {date} {desc}')
     if res == 'OK':
         print('Data berhasil ditambahkan!')
