@@ -100,7 +100,7 @@
 </symbol>
 </g>
 </defs>
-<g id="surface6361">
+<g id="surface6737">
 <rect x="0" y="0" width="556" height="327" style="fill:rgb(100%,100%,100%);fill-opacity:1;stroke:none;"/>
 <path style="fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 26.398853 4.452854 L 29.592017 4.452854 L 29.592017 6.352854 L 26.398853 6.352854 Z M 26.398853 4.452854 " transform="matrix(20,0,0,20,-431.438,-66.22115)"/>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
@@ -352,9 +352,10 @@
   <use xlink:href="#glyph0-7" x="200.909288" y="310.220812"/>
   <use xlink:href="#glyph0-13" x="207.575955" y="310.220812"/>
 </g>
-<path style="fill:none;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 22.899439 18.627659 L 21.6719 18.627659 L 21.6719 14.817112 L 22.085377 14.817112 " transform="matrix(20,0,0,20,-431.438,-66.22115)"/>
-<path style="fill-rule:evenodd;fill:rgb(0%,0%,0%);fill-opacity:1;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 22.460377 14.817112 L 21.960377 15.067112 L 22.085377 14.817112 L 21.960377 14.567112 Z M 22.460377 14.817112 " transform="matrix(20,0,0,20,-431.438,-66.22115)"/>
+<path style="fill:none;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 22.899439 18.627659 L 21.6719 18.627659 L 21.6719 8.512815 L 24.431861 8.512815 " transform="matrix(20,0,0,20,-431.438,-66.22115)"/>
+<path style="fill-rule:evenodd;fill:rgb(0%,0%,0%);fill-opacity:1;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 24.806861 8.512815 L 24.306861 8.762815 L 24.431861 8.512815 L 24.306861 8.262815 Z M 24.806861 8.512815 " transform="matrix(20,0,0,20,-431.438,-66.22115)"/>
 <path style="fill:none;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 33.446314 18.627659 L 36.251978 18.627659 L 36.251978 15.503636 L 39.544166 15.503636 " transform="matrix(20,0,0,20,-431.438,-66.22115)"/>
 <path style="fill-rule:evenodd;fill:rgb(0%,0%,0%);fill-opacity:1;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 33.071314 18.627659 L 33.571314 18.377659 L 33.446314 18.627659 L 33.571314 18.877659 Z M 33.071314 18.627659 " transform="matrix(20,0,0,20,-431.438,-66.22115)"/>
+<path style="fill:none;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-dasharray:1,0.266667,0.1,0.266667,0.1,0.266667;stroke-miterlimit:10;" d="M 31.08108 8.512815 L 32.48772 8.512815 L 32.48772 5.693089 L 36.740259 5.693089 " transform="matrix(20,0,0,20,-431.438,-66.22115)"/>
 </g>
 </svg>
